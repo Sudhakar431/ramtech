@@ -1,0 +1,36 @@
+
+
+<html>
+<head>
+    <title>Login Page Form</title>
+    <style>
+        body {
+            background-image: url("C:\Users\user\Downloads\Screenshot 2023-07-16 223508.png");
+        }
+    </style>
+    
+    
+    <script>
+        function loginvalidate(form){
+            var myusername=form.username.value;
+            var mypassword=form.password.value;
+            if(myusername.length===0){
+                alert("you must enter valid username")
+                return false;
+            }
+            if(mypassword.length===0){
+                alert("you must enter valid password")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login Page</h1>
+   <form action="D:\UI development\01-HTML\success.html" onsubmit="return loginvalidate(this)">
+    User Name :<input type="text" name="username" size="10"><br><br>
+        Paasword :<input type="password" name="password" size="10"><br><br>
+        <input type="submit">
+   </form>
+</body>
+</html>

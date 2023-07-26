@@ -1,0 +1,30 @@
+
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2> JAVA Script Objects</h2>
+        <p id="myram">Hello</p>
+
+    <script>
+        //create an object
+
+        var person ={
+            firstname : "Ramesh" ,
+            lastname : "K" ,
+            age : 25 , 
+            address : "Hyderabad" ,
+            persondata : function(){
+                return this.firstname +"Age : "+this.age +"Address "+this.address
+            }
+        };
+
+        //display data from the object
+
+        document.getElementById("myram").innerHTML=person.persondata();
+
+    </script>    
+    </body>
+</html>
